@@ -25,8 +25,6 @@ public class Main2Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("YourMeal");
         video = (VideoView) findViewById(R.id.videoView);
-        String Path1 = "http://bit.ly/1bJJJat";
-        video.setVideoPath(Path1);
 
 
 
