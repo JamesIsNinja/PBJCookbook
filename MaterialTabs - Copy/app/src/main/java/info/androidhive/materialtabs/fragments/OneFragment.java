@@ -12,8 +12,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
+import android.content.Intent;
 import info.androidhive.materialtabs.R;
+import info.androidhive.materialtabs.activity.Main2Activity;
 import info.androidhive.materialtabs.activity.MainActivity;
 
 public class OneFragment extends Fragment{
@@ -38,9 +39,8 @@ public class OneFragment extends Fragment{
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent,View view, int position, long id) {
-                Toast.makeText(getContext(),
-                        "Click ListItem Number " + position, Toast.LENGTH_LONG)
-                        .show();
+                Intent intent = new Intent(getActivity(), Main2Activity.class);
+                startActivity(intent);
             }
         });
         return rootView;
